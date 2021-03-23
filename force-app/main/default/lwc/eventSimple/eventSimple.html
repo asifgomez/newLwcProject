@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="My Dogs" icon-name="custom:custom9">
+        <div class="slds-m-around_medium">
+            <p class="slds-m-vertical_medium content">Page {page}</p>
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-tree items={items} header="Available Links"></lightning-tree>
+            </div>
+            <div class="slds-box">
+                <c-paginator onvideo={videoHandler} onmydog={mydogHandler} onsurvey={surveyHandler}></c-paginator>
+            </div>
+        </div>
+    </lightning-card>
+</template>
